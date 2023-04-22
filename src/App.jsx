@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react'
 import io from 'socket.io-client'
 import RecordRTC from 'recordrtc'
 
-const socket = io('http://127.0.0.1:5001')
+const socket = io('https://transcription-app2.herokuapp.com/')
 
 const App = () => {
   const [isRecording, setIsRecording] = useState(false)
